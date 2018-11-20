@@ -1,0 +1,24 @@
+#extra_table .radio_buttons:first-of-type{
+    border-top: 1px solid #dee2e6;
+    padding-top: 10px;
+}
+
+#extra_table{
+    background:#f8f9fa;
+}
+
+#primary_table{
+    background: #e4a4b2;
+}
+
+i:hover{
+    cursor: pointer;
+    font-size: 35px;
+}
+#admin:hover, #formular:hover{
+    cursor: pointer;
+}
+
+#version label, input[name='version']{
+    display: inline;
+}
