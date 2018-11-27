@@ -1,8 +1,6 @@
 class Admin {
     private count: number = $(".name").length;
-    private searchResult: any;
-
-    private isSearched = [];
+    
     constructor() {
         this.registerEvents();
     }
@@ -24,7 +22,7 @@ class Admin {
 
         //On "click" on button search
         $("#button_search").on("click", () => {
-            console.log("hi")
+            
             var key = $("input[name='search_input']").val();
             $("#extra_table").html("");
             $("#primary_table").html("");

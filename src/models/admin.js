@@ -2,7 +2,6 @@
 var Admin = /** @class */ (function () {
     function Admin() {
         this.count = $(".name").length;
-        this.isSearched = [];
         this.registerEvents();
     }
     Admin.prototype.registerEvents = function () {
@@ -21,7 +20,6 @@ var Admin = /** @class */ (function () {
         });
         //On "click" on button search
         $("#button_search").on("click", function () {
-            console.log("hi");
             var key = $("input[name='search_input']").val();
             $("#extra_table").html("");
             $("#primary_table").html("");

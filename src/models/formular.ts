@@ -52,7 +52,7 @@ class Formular {
                             }
                         }
                         if(resolve.values[val].selection_validation == "Mandatory"){
-                            $("label[for='"+ resolve.values[val].label +"']").append("*");
+                            $("#" + resolve.values[val].name).find("label[for='"+ resolve.values[val].label +"']").append("*");
                         }
                         
                     }
